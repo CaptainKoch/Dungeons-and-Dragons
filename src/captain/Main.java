@@ -6,11 +6,11 @@ public class Main {
 
         Player Nils = new Player();
 
-        Nils.setPlayerName("Gronak - Sleeper of Men");
-        Nils.setPlayerMaxHealth(30);
-        Nils.setPlayerTempHealth(15);
+        Nils.setName("Gronak - Sleeper of Men");
+        Nils.setMaxHealth(30);
+        Nils.setTempHealth(15);
 
-        System.out.println("I am " + Nils.playerName);
+        System.out.println("I am " + Nils.getName());
 
         Nils.loseHealth(8);
         Nils.gainHealth(15);
