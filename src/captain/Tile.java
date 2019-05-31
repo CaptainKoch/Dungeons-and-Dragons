@@ -3,7 +3,7 @@ package captain;
 import java.util.ArrayList;
 
 public class Tile {
-    private ArrayList<Player> players;
+    private ArrayList<Player> players = new ArrayList<Player>();
 
     public boolean isOccupied() {
         if (players.size() > 0) return true;
