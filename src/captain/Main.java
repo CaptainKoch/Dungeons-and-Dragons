@@ -6,25 +6,16 @@ public class Main {
     public static void main(String[] args) {
 
         Player Nils = new Player();
+        Nils.setName("PenisPredator69");
         Player Tom = new Player();
+        Tom.setName("PussySlayer420");
 
-        Tile tile1 = new Tile();
+        Map Forest = new Map(3, 3);
 
-        tile1.addPlayer(Nils);
+        Forest.addPlayer(Nils, 2, 3);
+        Forest.addPlayer(Tom, 1,1);
 
-        if (tile1.isOccupied()) System.out.println("Tile is occupied");
 
-        /*Nils.setName("Gronak - Sleeper of Men");
-        Nils.setMaxHealth(30);
-        Nils.setTempHealth(15);
 
-        System.out.println("I am " + Nils.getName());
-
-        Nils.loseHealth(8);
-        Nils.gainHealth(15);
-        Nils.gainHealth(15);
-        Nils.loseHealth(33);
-        Nils.gainHealth(2);
-        */
     }
 }

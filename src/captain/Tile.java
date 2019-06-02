@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 public class Tile {
     private ArrayList<Player> players = new ArrayList<Player>();
+    private boolean occupied;
 
     public boolean isOccupied() {
         if (players.size() > 0) return true;
