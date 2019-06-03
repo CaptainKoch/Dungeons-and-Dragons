@@ -14,9 +14,9 @@ public class Main {
         Forest.addPlayer(Nils, 1, 1);
         Forest.addPlayer(Tom, 9, 9);
 
-        Forest.findPlayer(Nils);
+
         Forest.movePlayer(Nils, 2, 2);
-        Forest.findPlayer(Nils);
+        Forest.removePlayer(Nils);
 
     }
 }
