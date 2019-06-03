@@ -14,14 +14,21 @@ public class Tile {
     public void addPlayer(Player newPlayer) {
         players.add(newPlayer);
         occupiedByPlayer = true;
-        System.out.println("Player added");
+        //System.out.println("Player added");
     }
 
     public void removePlayer(Player playerToRemove) {
         players.remove(playerToRemove);
         occupiedByPlayer = false;
-        System.out.println("Player removed");
+        //System.out.println("Player removed");
     }
 
-
+    public boolean playerOnTile(Player playerToFind) {
+        for (int i = 0; i < players.size(); i++) {
+            if (players.get(i) == playerToFind) {
+                return true;
+            }
+        }
+        return false;
+    }
 }
