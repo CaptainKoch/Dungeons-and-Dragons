@@ -15,12 +15,14 @@ public class Map {
         }
     }
 
-    public Tile findPlayer(Player lostPlayer) { int x = 0; int y = 0;
+    public Tile findPlayer(Player lostPlayer) {
         for (int i = 0; i < Map.length; i++) {
             for (int j = 0; j < Map[i].length; j++) {
-                if (Map[i][j].playerOnTile(lostPlayer)) x = i; y = j;
+                if (Map[i][j].playerOnTile(lostPlayer)) {
+                    return Map[i][j];
+                }
             }
-        } return Map[x][y];
+        } return null;
     }
 
     public void addPlayer(Player newPlayer, int row, int col) {
